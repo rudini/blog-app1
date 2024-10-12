@@ -11,7 +11,11 @@ on:
   workflow_dispatch:
 
 jobs:
+  codeQL:
+    uses: rudini/blog-app1/.github/workflows/codeql@main
+    
   build:
+    needs: codeQL
     runs-on: ubuntu-latest
     name: Build Job
     strategy:
