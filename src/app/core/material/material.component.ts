@@ -10,7 +10,6 @@ import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-material',
-  standalone: true,
   imports: [
     MatCardModule,
     MatRadioModule,
@@ -20,7 +19,6 @@ import { MatCardModule } from '@angular/material/card';
   ],
   templateUrl: './material.component.html',
   styleUrl: './material.component.scss',
-  // host: { style: 'display: block; margin: 0 auto; width: 600px' }
 })
 export class MaterialComponent {
   mode: ProgressBarMode = 'determinate';
