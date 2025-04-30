@@ -4,7 +4,6 @@ import { MaterialComponent } from './core/material/material.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   imports: [RouterOutlet, MaterialComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
